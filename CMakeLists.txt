@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.0)
 #### setable variables ####
 set(SDCC_EXECUTABLE "/usr/bin/sdcc" CACHE PATH "path to sdcc executable" FORCE)
 set(SDCC_LIB "/usr/share/sdcc" CACHE PATH "path to sdcc library directory" FORCE)
+set(WCHISPTOOL "/usr/local/bin/wchisptool" CACHE PATH "path to wchisptool executable" FORCE)
 set(SDCC_FLAGS "-V -mmcs51 --verbose --Werror --std-c11 --model-small" CACHE STRING "preprocessor and linker flags" FORCE)
 set(XRAM_LOC "0x0000" CACHE STRING "external ram start location" FORCE)
 set(XRAM_SIZE "0x0400" CACHE STRING "external ram size" FORCE)
